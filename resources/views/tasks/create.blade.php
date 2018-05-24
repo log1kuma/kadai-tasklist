@@ -10,7 +10,7 @@
     {!! Form::text('content') !!}
     
     {!! Form::label('status', 'ステータス:') !!}
-    {!! Form::text('status') !!}
+    {!! Form::select('status', ['0' => 'まだ', '1' => '進行中', '2' => '完了'], '0') !!}
     
     {!! Form::submit('投稿') !!}
     
